@@ -14,6 +14,7 @@
 
 
 *{
+  scroll-behavior: smooth;
   font-family: 'Mali', cursive;
   box-sizing: border-box;
 }
@@ -71,3 +72,74 @@ a:hover,a:focus{
   color: var(--text-background);
   border-bottom: 3px solid;
 }
+
+.theme-switch-container{
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position:fixed;
+  right:25px;
+  top: 30px;  
+}
+
+.theme-switch-container span{
+  margin-right: 10px;
+  font-size: 1rem;
+
+}
+
+.toggle-text{
+  position:relative;
+  top: -4px;
+  right: 5px;
+  color: var(--text-background);
+}
+
+.theme-switch{
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input{
+  display: none;
+}
+
+.slider{
+  background-color: #ccc;
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.slider::before{
+  background: #fff;
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  transition:.4s; 
+  height: 26px;
+  width: 26px; 
+}
+
+input:checked + .slider::before{
+  transform: translateX(26px);
+}
+
+.slider{
+  border-radius: 34px;
+}
+
+
+.slider::before{
+  border-radius: 50%;
+}
+
+.fa{
+  font-size: 30px;
+  margin-right: 5px;
+  color: black;
+} 
