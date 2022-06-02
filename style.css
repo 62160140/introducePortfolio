@@ -11,6 +11,15 @@
   /* -------- */
 }
 
+/* custom property */
+[data-theme = "dark"]{
+  --primary-color:orange; /* ข้อความเด่น */
+  --text-color: white;
+  --text-color-second:rgba(255,255,255,.8);
+  --background:#121213;
+  --box-shadow:0 5px 20px 1px rgba(0,0,0,.5);
+}
+
 
 *{
   scroll-behavior: smooth;
@@ -124,7 +133,7 @@ a:hover,a:focus{
   width: 26px; 
 }
 
-/* ให้ทำหลังจาก input ที่ checked แล้ว */
+/* ให้ทำที่ slider::before หลังจาก input ที่ checked แล้ว */
 input:checked + .slider::before{
   transform: translateX(26px);
 }
