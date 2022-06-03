@@ -170,3 +170,22 @@ input:checked + .slider::before{
 .social-icon >  i:hover{
   color: var(--text-color);
 }
+
+.project-container{
+  display: flex;
+}
+
+.image-container{
+  border:1px solid --text-color-second;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 10px 20px;
+  background: var(--background);
+  margin: 5px 20px 0px 0px;
+  width: auto;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
