@@ -45,3 +45,5 @@ function lightMode(){
   nav.style.backgroundColor = 'rgb(255 255 255 /50%)'
 
 }
+
+lightMode()
